@@ -1,6 +1,8 @@
 .appContainer {
   width: 100vw;
   height: 100vh;
+  display: flex;
+
 }
 
 .viewport {
@@ -8,6 +10,7 @@
   flex-direction: column;
   overflow: hidden;
   gap: 16px;
+  flex-grow: 1;
 }
 
 .container {
@@ -28,9 +31,14 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  margin-left: -300px;
   width: 300px;
   border: 1px solid blue;
-  background-color: red
+  background-color: red;
+  transition: all .3s ease-out;
+}
+.barMenu.open {
+  margin-left: 0px;
 }
 
 .openButton {
@@ -38,4 +46,20 @@
   height: 80px;
   border: 1px solid blue;
   background-color: darkblue;
+}
+
+.wrapper {
+  position: relative;
+  overflow: hidden;
+  flex-grow: 1;
+}
+
+.content {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  outline: 1px solid red;
+  background-color: deepskyblue;
 }
