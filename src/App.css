@@ -1,0 +1,41 @@
+.appContainer {
+  width: 100vw;
+  height: 100vh;
+}
+
+.viewport {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  gap: 16px;
+}
+
+.container {
+  display: flex;
+  overflow: hidden;
+  flex-direction: row;
+  flex-grow: 1;
+  flex-wrap: nowrap;
+  align-items: stretch;
+}
+
+.containerHighchartReact {
+  flex-basis: 100%;
+  flex-grow: 1;
+}
+
+.barMenu {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 300px;
+  border: 1px solid blue;
+  background-color: red
+}
+
+.openButton {
+  width: 380px;
+  height: 80px;
+  border: 1px solid blue;
+  background-color: darkblue;
+}
