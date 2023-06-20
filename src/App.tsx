@@ -19,13 +19,13 @@ function App() {
       <div className="appContainer">
         <div className="viewport">
           <div className="container">
-            {open ? <div className="barMenu">Collapsed element</div> : null}
             <HighchartsReact
               highcharts={Highcharts}
               options={options}
               immutable={false}
               containerProps={{ style: { width: "100%" } }}
             />
+            {open ? <div className="barMenu">Collapsed element</div> : null}
           </div>
           <button className="openButton" onClick={() => setOpen(() => !open)}>
             open
